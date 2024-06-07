@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Content Offerings</h1>
+    <a href="{{ url_for('add_content') }}">Add New Content</a>
+    <ul>
+        {% for content in content_offerings %}
+        <li>
+            <h2>{{ content.title }}</h2>
+            <p>{{ content.description }}</p>
+            <p>${{ content.price }}</p>
+            <form action="{{ url_for('add_to_cart') }}" method="POST">
+                <input type="hidden" name="content_id" value="{{ content.id }}">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('checkout') }}">Go to Checkout</a>
+</body>
+</html>
