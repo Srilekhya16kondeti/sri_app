@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # publisherapp
 Certainly! Below is a `README.md` template incorporating the details of the project's structure and usage based on the provided code:
 
@@ -110,3 +111,6 @@ This project is licensed under the [MIT License](LICENSE).
 ```
 
 You can replace the placeholders with actual content specific to your project. This template provides detailed sections covering the introduction, features, installation, usage, contributing guidelines, and license information for your project's `README.md` file.
+=======
+# Publisher-Content-Management
+>>>>>>> origin/main
