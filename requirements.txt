@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 Flask
 Flask-SQLAlchemy
-=======
-Flask
-Flask-SQLAlchemy
->>>>>>> 89900e3c157d554cd02bbe13312b712e97820d9b
